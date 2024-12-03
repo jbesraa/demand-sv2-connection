@@ -114,7 +114,7 @@ impl Connection {
             let mut times = 0;
             while !decoder.droppable() {
                 tokio::time::sleep(Duration::from_secs(5)).await;
-                if times >= 10 {
+                if times >= 60 {
                     error!("Irrecoverable error impossible to free decoder");
                     std::process::exit(1);
                 }
