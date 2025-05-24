@@ -75,20 +75,14 @@ dependencies = [
 
 [[package]]
 name = "binary_codec_sv2"
-version = "1.2.0"
-source = "git+https://github.com/demand-open-source/stratum?branch=ImproveCoinbase#0a6f3d72864d7cec6ce8b9388899877eb85778ad"
-dependencies = [
- "buffer_sv2",
-]
+version = "2.0.0"
 
 [[package]]
 name = "binary_sv2"
-version = "1.2.0"
-source = "git+https://github.com/demand-open-source/stratum?branch=ImproveCoinbase#0a6f3d72864d7cec6ce8b9388899877eb85778ad"
+version = "2.0.0"
 dependencies = [
  "binary_codec_sv2",
  "derive_codec_sv2",
- "tracing",
 ]
 
 [[package]]
@@ -115,8 +109,7 @@ checksum = "cf4b9d6a944f767f8e5e0db018570623c85f3d925ac718db4e06d0187adb21c1"
 
 [[package]]
 name = "buffer_sv2"
-version = "1.1.0"
-source = "git+https://github.com/demand-open-source/stratum?branch=ImproveCoinbase#0a6f3d72864d7cec6ce8b9388899877eb85778ad"
+version = "2.0.0"
 dependencies = [
  "aes-gcm",
 ]
@@ -182,21 +175,20 @@ dependencies = [
 
 [[package]]
 name = "codec_sv2"
-version = "1.3.0"
-source = "git+https://github.com/demand-open-source/stratum?branch=ImproveCoinbase#0a6f3d72864d7cec6ce8b9388899877eb85778ad"
+version = "2.0.0"
 dependencies = [
  "binary_sv2",
  "buffer_sv2",
  "const_sv2",
  "framing_sv2",
  "noise_sv2",
+ "rand",
  "tracing",
 ]
 
 [[package]]
 name = "const_sv2"
-version = "2.1.0"
-source = "git+https://github.com/demand-open-source/stratum?branch=ImproveCoinbase#0a6f3d72864d7cec6ce8b9388899877eb85778ad"
+version = "3.0.0"
 
 [[package]]
 name = "cpufeatures"
@@ -214,7 +206,6 @@ source = "registry+https://github.com/rust-lang/crates.io-index"
 checksum = "1bfb12502f3fc46cca1bb51ac28df9d618d813cdc3d2f25b9fe775a34af26bb3"
 dependencies = [
  "generic-array",
- "rand_core",
  "typenum",
 ]
 
@@ -241,19 +232,16 @@ dependencies = [
 
 [[package]]
 name = "derive_codec_sv2"
-version = "1.1.0"
-source = "git+https://github.com/demand-open-source/stratum?branch=ImproveCoinbase#0a6f3d72864d7cec6ce8b9388899877eb85778ad"
+version = "2.0.0"
 dependencies = [
  "binary_codec_sv2",
 ]
 
 [[package]]
 name = "framing_sv2"
-version = "2.0.0"
-source = "git+https://github.com/demand-open-source/stratum?branch=ImproveCoinbase#0a6f3d72864d7cec6ce8b9388899877eb85778ad"
+version = "4.0.0"
 dependencies = [
  "binary_sv2",
- "buffer_sv2",
  "const_sv2",
 ]
 
@@ -448,8 +436,7 @@ dependencies = [
 
 [[package]]
 name = "noise_sv2"
-version = "1.2.0"
-source = "git+https://github.com/demand-open-source/stratum?branch=ImproveCoinbase#0a6f3d72864d7cec6ce8b9388899877eb85778ad"
+version = "1.2.1"
 dependencies = [
  "aes-gcm",
  "chacha20poly1305",
